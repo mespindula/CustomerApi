@@ -1,0 +1,34 @@
+plugins {
+    // Apply the java-library plugin to add support for Java Library
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.29'
+    
+    compile group: 'com.sparkjava', name: 'spark-core', version: '2.9.3'
+    
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.0'
+    
+    compile group: 'com.google.inject', name: 'guice', version: '4.2.3'
+    
+    compile group: 'net.sf.dozer', name: 'dozer', version: '5.5.1'
+    
+    compile group: 'io.craftsman', name: 'dozer-jdk8-support', version: '1.0.6'
+
+    implementation 'org.jdbi:jdbi3-bom:3.17.0'
+    
+    compile group: 'org.jdbi', name: 'jdbi3-core', version: '3.1.0'
+    
+    //compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.22'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.7'
+    
+}
